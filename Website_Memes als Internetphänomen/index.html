@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Memes</title>
+    <link href="quasar/iconscss.css" rel="stylesheet" type="text/css" />
+    <link href="quasar/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="quasar/quasar.min.css" rel="stylesheet" type="text/css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <style>
+      .main-bg {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("assets/babyyoda.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+      }
+
+      .center--main {
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        vertical-align: middle;
+      }
+
+      .big-heading {
+        font-size: 100px;
+        color: white;
+        opacity: 0.9;
+      }
+
+      .small-heading {
+        opacity: 0.8;
+        color: white;
+        font-size: 25px;
+      }
+
+      .row {
+        scroll-snap-align: start;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="q-app">
+      <q-layout class="snap">
+        <div class="row justify-center main-bg">
+          <div class="col-sm-12 col-lg-6 q-mt-xl">
+            <div class="text-center big-heading">Memes</div>
+            <div class="text-center small-heading">
+              Wie ein Internetphänomen das Internet im Sturm eroberte
+            </div>
+            <q-btn
+              @click="scrollDown()"
+              size="xl"
+              flat
+              color="white full-width"
+              style="margin-top: 150px"
+              >Mehr Erfahren <q-icon name="arrow_downward"></q-icon
+            ></q-btn>
+          </div>
+        </div>
+
+        <div id="mainarea" style="min-height: 100vh;">
+          <div
+            class="row q-col-gutter-lg items-center align-center justify-center justify-around"
+            style="height: 100%; margin-top: 50px"
+          >
+            <div key="1" class="col-xs-12 col-lg-4 col-md-4">
+              <q-card
+                @click="openPage('geschichte')"
+                color="cursor-pointer bg-dar"
+                v-ripple
+                style="height: 370px;"
+              >
+                <div
+                  class="column justify-center"
+                  style="height: 100%; background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url('assets/aliens.jpg')"
+                >
+                  <h3 class="text-center">
+                    Geschichte
+                  </h3>
+                  <q-btn outline flat>Mehr Erfahren</q-btn>
+                </div>
+              </q-card>
+            </div>
+
+            <div key="2" class="col-xs-12 col-lg-4 col-md-4">
+              <q-card
+                @click="openPage('erklaerung')"
+                color="cursor-pointer bg-dar"
+                v-ripple
+                style="height: 370px"
+              >
+                <div
+                  class="column justify-center"
+                  style="height: 100%; background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url('assets/philiosaurus.jpg'); background-size: cover"
+                >
+                  <h3 class="text-center">
+                    Was ist ein Meme?
+                  </h3>
+                  <q-btn outline flat>Mehr Erfahren</q-btn>
+                </div>
+              </q-card>
+            </div>
+
+            <div key="3" class="col-xs-12 col-lg-4 col-md-4">
+              <q-card
+                @click="openPage('trends')"
+                color="cursor-pointer bg-dar"
+                v-ripple
+                style="height: 370px; width: 100%"
+              >
+                <div
+                  class="column justify-center"
+                  style="width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0, 0.8)), url('assets/stonks.jpg');"
+                >
+                  <h3 class="text-center">
+                    Trends
+                  </h3>
+                  <q-btn outline flat>Mehr Erfahren</q-btn>
+                </div>
+              </q-card>
+            </div>
+          </div>
+          <q-footer bordered class="bg-dark text-primary">
+            <q-tabs
+              no-caps
+              active-color="primary"
+              indicator-color="transparent"
+              class="text-grey"
+              v-model="tab"
+            >
+              <q-tab name="erklaerung" label="Erklärung"></q-tab>
+              <q-tab name="geschichte" label="Entwicklung"></q-tab>
+              <q-tab name="index" icon="home"></q-tab>
+              <q-tab name="trends" label="Trends"></q-tab>
+              <q-tab name="about" label="Über"></q-tab>
+            </q-tabs>
+          </q-footer>
+        </div>
+      </q-layout>
+    </div>
+
+    <script>
+      window.quasarConfig = {
+        dark: true
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/quasar@1.9.4/dist/quasar.ie.polyfills.umd.min.js"></script>
+    <script src="quasar/vue.min.js"></script>
+    <script src="quasar/quasar.umd.min.js"></script>
+
+    <script>
+      /*
+		  Example kicking off the UI. Obviously, adapt this to your specific needs.
+		  Assumes you have a <div id="q-app"></div> in your <body> above
+		 */
+      new Vue({
+        el: "#q-app",
+        data: function() {
+          return {
+            tab: "index"
+          };
+        },
+        watch: {
+          tab: function (val) {
+            window.location.href = val + ".html";
+          }
+        },
+        methods: {
+          openPage: function (name) {
+            window.location.href = name + ".html";
+          },
+          scrollDown: function () {
+            const element = document.querySelector("#mainarea");
+            const top =
+              element.getBoundingClientRect().top + window.pageYOffset;
+
+            window.scrollTo({
+              top, // scroll so that the element is at the top of the view
+              behavior: "smooth" // smooth scroll
+            });
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

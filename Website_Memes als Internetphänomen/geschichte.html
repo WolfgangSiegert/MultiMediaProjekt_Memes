@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+  <!--
+    WARNING! Make sure that you match all Quasar related
+    tags to the same version! (Below it's "@1.9.3")
+  -->
+  <html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <title>Geschichte | Memes - Ein Ph&auml;nomen</title>
+    <link href="quasar/iconscss.css" rel="stylesheet" type="text/css" />
+    <link href="quasar/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="quasar/quasar.min.css" rel="stylesheet" type="text/css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+
+    <style>
+      .header--section {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(18, 18, 18, 0) 0%,
+            rgba(18, 18, 18, 0.98) 90%,
+            rgba(18, 18, 18, 1) 100%
+          ),
+          url("assets/aliens.jpg");
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Add the following at the end of your body tag -->
+    <div id="q-app">
+      <q-layout view="hHh lpR fFf">
+        <div class="header--section">
+          <h3 class="q-mt-none text-weight-bold">
+            Geschichte
+          </h3>
+          <q-tabs
+            v-model="activetabs"
+            inline-label
+            active-color="primary"
+            align="left"
+          >
+            <q-tab
+              name="geschichte"
+              icon="format_shapes"
+              label="Geschichte"
+            ></q-tab>
+            <q-tab name="cycle" icon="label" label="Lebenszyklus"></q-tab>
+          </q-tabs>
+        </div>
+
+        <div class="row" style="margin-bottom: 150px; margin-left: 25px">
+          <div class="col-xs-12 col-lg-7">
+            <q-tab-panels
+              v-model="activetabs"
+              animated
+              swipeable
+              vertical
+              transition-prev="jump-up"
+              active-class="text-primary"
+              class="bg-transparent"
+              transition-next="jump-up"
+              swipeable
+            >
+              <q-tab-panel name="geschichte">
+                <h4>Die historische Entwicklung der Memes</h4>
+
+                <p>
+                  Memes, wie die Menschen sie heute verstehen, sind erst Mitte
+                  der 1990er Jahre richtig in Schwung gekommen, als sich nun
+                  kleine Gruppen von Durchschnittsmenschen im Internet
+                  versammelten und ihre Message-Boards und Usenet-Gruppen mit
+                  Dingen bev&ouml;lkerten, die die Gruppe(n) lustig fand(n). In den
+                  fr&uuml;hen Tagen waren verpixelte Bilder von tanzenden Babys oder
+                  Hamstern alles, was es brauchte, um ein Meme ber&uuml;hmt zu
+                  machen.
+                </p>
+
+                <h5>Das erste Meme</h5>
+
+                <p>
+                  "<b>;-)</b>" - Scott E. Fahlman, 19. September 1982 Ja, richtig
+                  gesehen. Das Smiley ;-) ist das erste Meme, das je existiert
+                  hat. Es entstand im Usenet, einer separaten Form des Internets
+                  neben dem 1993 entstandenen World Wide Web. Im Usenet tauschen
+                  sich Menschen in reiner Textform miteinander aus. Das sorgte
+                  in Diskussionen oft f&uuml;r Missverst&auml;ndnisse, da man nicht
+                  wusste, ob das Gegen&uuml;ber das Geschriebene ernst meint oder
+                  nicht. Deshalb schlug Fahlman vor, das Smiley ;-) hinter
+                  Eintr&auml;ge zu setzen, die als Witz gemeint waren.
+                </p>
+
+                <p>
+                  Das Smiley verbreitete sich rasend schnell und bald wurden
+                  diverse andere Smileys erschaffen, die keinen Nutzen ausser
+                  der Unterhaltung mehr hatten. Sie waren zum Teil extrem
+                  kompliziert und nur "Eingeweihte" konnten sie entziffern. 1993
+                  wurde sogar ein Smiley W&ouml;rterbuch ver&ouml;ffentlicht, in dem die
+                  wichtigsten Symbole erkl&auml;rt wurden. F&uuml;r uns heute klingt dies
+                  seltsam, jeder weiss, was :P, :D oder ;) bedeutet. Warum? Weil
+                  wir Smileys, wie Dawkins es beschrieben hat,
+                  weiterentwickelten. Doch man kann sehen, wie alles begann: als
+                  Insider-Witz.
+                </p>
+
+                <h5>Die ersten viralen Hits (1996 - 2000)</h5>
+
+                <p>
+                  Als das Internet von der Modem-Einwahl auf DSL umgestellt
+                  wurde und Meme-Austausch-Boards wie eBaum's World an Bedeutung
+                  gewannen, wurden die Dinge immer ausgefeilter. Bald waren
+                  Fotos von K&auml;tzchen, die schlie&szlig;lich als LOLcats bekannt
+                  wurden, mit Untertiteln in ihrer eigenen speziellen Grammatik
+                  ein riesen Ding.
+                </p>
+
+                <h5>Videos und Image Macros erobern das Netz (2000 - 2010)</h5>
+
+                <p>
+                  Die LOLcat wurde schlie&szlig;lich zum Prototypen f&uuml;r das Bildmakro:
+                  ein einfaches Bild, das oben und unten mit fetter
+                  Impact-Schrift versehen ist - oben wird der Witz aufgebaut,
+                  unten kommt die Pointe. Andere Bildmakros - wie das
+                  ber&uuml;chtigte "I Can Has Cheezburger?" oder diejenigen, die mit
+                  dem Schlagwort "All your base are belong to us" erstellt
+                  wurden - hatten in der Regel nur eine einzige
+                  Bildunterschrift. Und das vor allem dank Sites wie dem sehr
+                  beliebten Imageboard 4chan.
+                </p><br clear="all"/>
+                <figure>
+                         <img src=".\assets\n_b_.jpg" alt="Image Macro generisch" />
+                         <figcaption>generisches Image-Macro - Meme</figcaption>
+                </figure> <br clear="all"/>
+
+                <p>
+                  Videomemes, die theoretisch bis zu den Tagen zur&uuml;ckreichen,
+                  als man Ende der 90er Jahre tats&auml;chlich Videodateien wie
+                  badday.mpg per E-Mail verschickte, sind nach dem Start von
+                  YouTube im Jahr 2005 richtig in Schwung gekommen.
+                </p>
+
+                <p>
+                  YouTube und andere Video-Sharing-Websites machten es viel
+                  einfacher, ein Video als Pointe eines Witzes zu verwenden.
+                  Rickroll - die Praxis, jemanden dazu zu bringen, auf einen
+                  Link zum Musikvideo zu Rick Astleys "Never Gonna Give You Up"
+                  zu klicken - wurde massiv popul&auml;r. Auch das Senden von Links
+                  zu dem Trololo Guy, dem russischen Bariton Eduard Khil, der
+                  das Lied aus der Sowjetzeit "I Am Very Glad As I'm Finally
+                  Returning Back Home" singt, wurde massiv popul&auml;r.
+                </p>
+
+                <p>
+                  Keines dieser Videos war explizit lustig, noch war es von
+                  Natur aus lustig, auf der Empf&auml;ngerseite zu stehen, aber wie
+                  bei fast allen fr&uuml;hen Memen lebte der Humor in ihrer
+                  Wiederholung. Es war ein Trolling, aber eine meist gutm&uuml;tige
+                  Art, die sich mehr wie ein innerer Witz anf&uuml;hlt als ein Witz,
+                  der auf Kosten anderer gemacht wurde.
+                </p>
+
+                <p>
+                  Als Twitter, Facebook und andere Social-Media-Plattformen in
+                  den sp&auml;ten 2000er und fr&uuml;hen 2010er Jahren begannen, den
+                  Online-Diskurs zu pr&auml;gen, gewannen Bilder - insbesondere die
+                  Reaktion GIFs - eine massive neue Bedeutung. Und, wie bei
+                  GIFs, fanden auch &auml;ltere Formate wie Bildmakros eine ganz neue
+                  Verwendung. Mit Meme-Generator-Sites war es einfach, Bildmakros im
+                  Handumdrehen zu erstellen, und bald schienen Memes wie "Awkward
+                  Moment Seal" und "Scumbag Steve" fast t&auml;glich zu erscheinen. (der Humor
+                  war damals vielleicht alberner, sanfter
+                  - und die Meme kamen leicht).
+                </p>
+
+                <p>
+                  In den fr&uuml;hen Tagen begannen die Memes langsam und blieben
+                  l&auml;nger h&auml;ngen. (Zum Beispiel Nyan Cat gab es buchst&auml;blich
+                  Jahre lang.) Aber die Geschwindigkeit der sozialen Medien
+                  bedeutete, dass Memes innerhalb einer Woche, wenn nicht sogar
+                  eines Tages, explodieren und vorbei sein konnten. Momente wie
+                  #TheDress konnten fast &uuml;ber Nacht kommen und gehen.
+                </p>
+
+                <p>
+                  (Erinnern Sie sich, wo Sie waren, als das geschah?!)
+                  Ereignisse wie die Olympischen Spiele oder politische Debatten
+                  konnten Memes ausl&ouml;sen, die am Ende eines 24-st&uuml;ndigen
+                  Nachrichtenzyklus vorbei sein w&uuml;rden. Ideen k&ouml;nnten, wie
+                  Dawkins vor Jahrzehnten es beschrieben hatte, sofort einen
+                  Online-Insidererwitz starten und innerhalb weniger Stunden einen
+                  Twitter-Account, Tumblr und einen speziellen Hashtag haben.
+                  Und dann waren sie weg.
+                </p>
+
+                <h5>Die Zukunft der Memes</h5>
+
+                <p>
+                  Wie Dawkins voraussagte, haben sich Memes wieder entwickelt.
+                  Sie erhielten klarer definierte visuelle Formen und erreichten
+                  eine gr&ouml;ssere Anzahl Internet-Nutzer. Anstatt von anderen
+                  Menschen erstellten Content zu teilen, wurden mehr eigene
+                  Inhalte kreiert. Seiten wie icanhascheezburger und 9gag
+                  bildeten Sammelpl&auml;tze, auf denen sich jedermann &uuml;ber die
+                  neusten Memes informieren konnte. Doch Memes endg&uuml;ltig zum
+                  Alltagsobjekt machten andere Portale. N&auml;mlich Facebook,
+                  Twitter und Instagram. Social Media wurde "mememifiziert".
+                </p>
+
+                <h5>Massenph&auml;nomen Memes (2010 - heute)</h5>
+
+                <p>
+                  Heutzutage geht es bei Memes um mehr als nur um LOLcats. Sie
+                  haben zwei neue Zwecke entwickelt: Sie sollen Gruppenidentit&auml;t zeigen und st&auml;rken
+                  und sie sollen viel Geld einbringen. Fr&uuml;her haben
+                  Memes an die Grundlagen der Menschheit appelliert - jeder
+                  f&uuml;hlt sich manchmal unbeholfen, jeder sieht gerne zu, wie ein
+                  K&auml;tzchen sich zum Narren macht. Aber jetzt zeigen die Leute
+                  politische Memes wie Gang-Zeichen.
+                </p><br clear="all"/>
+                <figure>
+                         <img src=".\assets\wichtigememeForen und Boards.jpg" alt="wichige Meme Plattformen" />
+                </figure> <br clear="all"/>
+
+                <p>
+                  Bei den modernen amerikanischen Memes geht es um politische
+                  Korrektheit oder die Verfassung. Diese Memes werden als
+                  eine &ouml;ffentliche Erkl&auml;rung Ihrer politischen Positionen und
+                  Ihrer kulturellen Identit&auml;t angesehen und zunehmend als eine
+                  Einladung an Menschen mit gegens&auml;tzlichen Ansichten, Sie in
+                  den Kommentaren frech zu beleidigen (oder zu bel&auml;stigen). Ist
+                  die Kampflust ein Symptom daf&uuml;r, wie umstritten und
+                  polarisiert das Internet geworden ist? Memes sind nur
+                  Momentaufnahmen der Kultur. Ist es wahrscheinlich, dass es
+                  bald aufh&ouml;ren wird? Auf keinen Fall.
+                </p>
+
+                <h5>Fazit: Vom Untergrund in den Alltag</h5>
+
+                <p>
+                  Memes haben sich in den letzten Jahren immer weiter weg von
+                  obskuren Insider-Witzen in kleinen Internet-Foren entwickelt.
+                  So wie die Meme-Themen n&auml;her an den Alltag r&uuml;cken, so werden
+                  sie auch auf allt&auml;glichere Formen weiterverbreitet.
+                  Sie sind zu einem allt&auml;glichen Mittel der Kommunikation geworden und pr&auml;gen
+                  somit nicht nur das Internet, sondern die gesamte
+                  Jugendkultur. Angetrieben wurde diese Entwicklung durch die
+                  Omnipr&auml;senz von Social Media.
+                </p>
+                <p>
+                  Memes werden in WhatsApp-Chats verschickt, auf Facebook
+                  geteilt und auf Instagram geliked. Sie werden auf dem
+                  Schulhof, im B&uuml;ro oder bei Freunden zu Hause besprochen. Sie
+                  sind endg&uuml;ltig im Alltag zumindest der meisten
+                  Smartphone-Nutzer angekommen.
+                </p>
+              </q-tab-panel>
+              <q-tab-panel name="cycle">
+                <h4>Der Lebenszyklus eines Memes</h4>
+                <p>
+                <br clear="all"/>
+                <figure>
+                         <img src=".\assets\popular-the-satire-is-forgotten-and-once-again-the-meme-dies-meme-makes-a-satirical-comeback.png" alt="Lebenszyklus Memes" />
+                         <figcaption>Lebenszyklus eines Memes</figcaption>
+                </figure> <br clear="all"/>
+                  Grob l&auml;sst sich der Lebenszyklus eines Memes in ein paar
+                  Phasen einteilen, von der Entstehung bis zum Erscheinen im
+                  Facebook Feed der eigenen Eltern. Schauen wir uns das am
+                  Beispiel der Grumpy Cat an, deren Markenwert auf mehrere
+                  Millionen Dollar gesch&auml;tzt wird.
+                </p>
+
+                <h5>1. Die Entstehung</h5>
+
+                <p>
+                  T&auml;glich werden tausende Memes auf Seiten wie Reddit oder 4chan
+                  erstellt. Aber nur ein Bruchteil dieser schafft es, &uuml;berhaupt
+                  ein paar Anh&auml;nger zu finden, die diese als "gut" erachten. Die
+                  Besitzerin der Katze namens Tardar Sauce hat 2012 ein Bild auf
+                  reddit gepostet:
+                </p><br clear="all"/>
+                <figure>
+                         <img src="./assets/grumpy.webp" alt="GrumpyCat" />
+                </figure> <br clear="all"/>
+                <!--<q-img
+                  height="250px"
+                  contain
+                  class="q-my-sm"
+                  src="assets/grumpy.webp"
+                ></q-img>
+                -->
+                <p>
+                  Eine Katze die grantig, englisch grumpy", aussieht. Das hat
+                  Potenzial. Das ruft nat&uuml;rlich das Internet auf den Plan.
+                  Innerhalb k&uuml;rzester Zeit werden Schriftz&uuml;ge (Captions) ins
+                  Bild eingef&uuml;gt, um das Bild zu aufzupeppen.
+                </p>
+
+                <h5>2. Die Bekanntheit steigt</h5>
+
+                <p>
+                  Das Meme wird immer bekannter. Es wird geteilt, gepostet und
+                  mit Upvotes versehen. Es erreicht immer mehr Leute. Hier
+                  beginnt die kambrische Explosion dieses Memes: Jeder hat eine
+                  Idee f&uuml;r ein neues Grumpy Cat Meme, und f&uuml;hrt diese aus. Doch
+                  nur die besten Memes aus dieser Ursuppe &uuml;berleben. Die anderen
+                  verschwinden in der Versenkung.
+                </p><br clear="all"/>
+                <figure>
+                         <img src=".\assets\grumpyCat_Meme.jpg" alt="Grumpy Cat Meme" />
+                </figure> <br clear="all"/>
+
+                <p>
+                  Auf reddit wurden innerhalb von 48 Stunden 300 Grumpy Cat
+                  Posts erstellt. Die Bekanntheit ruft nat&uuml;rlich dann auch
+                  andere Webseiten auf den Plan: Kandidaten wie Buzzfeed oder
+                  9gag &uuml;bernehmen die besten Memes 1:1 und erweitern so das
+                  Publikum noch einmal um Millionen von Menschen. Hier beginnt
+                  das Meme, Mainstream zu werden.
+                </p><br clear="all"/>
+                <figure>
+                         <img src=".\assets\grumpycat_explosion.jpg" alt="Grumpy Cat Memes Explosion" />
+                </figure> <br clear="all"/>
+
+                <h5>3. Der Anfang vom Ende</h5>
+
+                <p>
+                  Hier schwindet die initiale Kreativit&auml;t der Memes-Ersteller.
+                  Irgendwie ist schon alles gesagt, was denn eine Katze sagen
+                  k&ouml;nnte, die einfach schlecht drauf ist. Dennoch, das Meme ist
+                  noch lange nicht am Ende. In dieser Phase wird das originale
+                  Meme anders interpretiert, mit anderen Memes kombiniert, und
+                  es entsteht so eine gewisse "Artenvielfalt".
+                </p>
+
+                <p>
+                  So enstand im Hype auch die Grumpy Grandma, die von der
+                  Bekanntheit der Grumpy Cat profitiert. Warum aber ist das der
+                  Anfang vom Ende? "Das Internet" oder die Personen, die sich
+                  selbst als "das Internet" bezeichnen, nutzen Memes, um sich
+                  vom Mainstream gewisserma&szlig;en auch abzugrenzen. Zum Beispiel:
+                  Millenials sind nicht mehr auf Facebook, weil dort die alte
+                  Generation ist.
+                </p>
+                <figure>
+                         <img src=".\assets\grumpyGrandma.jpg" alt="Grumpy Grandma" />
+                </figure>
+                <p>
+                  Das ist ein wichtiger Mechanismus des Memes in der
+                  Internetkultur: In dieser Phase ist der urspr&uuml;ngliche Kern der
+                  Personen, die diese Memes bekannt gemacht haben, bereits
+                  weitergezogen und ist von diesem Meme bereits genervt.
+                </p>
+
+                <h5>4. Das Ende</h5>
+
+                <p>
+                  Wenn ein Meme im Fernsehen gezeigt wird, ist es bereits tot.
+                  Hier werden aber erst die Personen darauf aufmerksam, die
+                  sonst nichts mit der Internetkultur zu tun haben. Die
+                  Besitzerin der Grumpy Cat hat sofort eine Firma gegr&uuml;ndet, die
+                  die Markenrechte am Bild der Katze verwertet. Du willst einen
+                  Becher mit der Grumpy Cat produzieren? Zahl Lizenzkosten. Hier
+                  hat das Meme hat nichts mehr mit der urspr&uuml;nglichen,
+                  originellen Idee zu tun. Es ist entweder zur Geldmache
+                  verkommen, oder aber schon so durchgekaut, dass es schon fast
+                  peinlich ist. Und genau hier liegt der Grund, warum
+                  Unternehmen es nicht schaffen, bei der Jugend "in" zu sein:
+                </p><br clear="all"/>
+                <figure>
+                         <img src=".\assets\text-life-of-a-meme-birth-death-life-9gag-t.png" alt="Lebenszyklus Memes" />
+                         <figcaption>Lebenszyklus eines Memes in Zusammenhang mit Verbreitungswegen</figcaption>
+                 </figure>
+              </q-tab-panel>
+            </q-tab-panels>
+          </div>
+        </div>
+
+        <q-footer bordered class="bg-dark text-primary">
+          <q-tabs
+            no-caps
+            active-color="primary"
+            indicator-color="transparent"
+            class="text-grey"
+            v-model="tab"
+          >
+            <q-tab name="erklaerung" label="Erkl&auml;rung"></q-tab>
+            <q-tab name="geschichte" label="Geschichte"></q-tab>
+            <q-tab name="index" icon="home"></q-tab>
+            <q-tab name="trends" label="Trends"></q-tab>
+            <q-tab name="about" label="&uuml;ber"></q-tab>
+          </q-tabs>
+        </q-footer>
+      </q-layout>
+    </div>
+
+    <script>
+      window.quasarConfig = {
+        dark: true
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/quasar@1.9.4/dist/quasar.ie.polyfills.umd.min.js"></script>
+    <script src="quasar/vue.min.js"></script>
+    <script src="quasar/quasar.umd.min.js"></script>
+
+    <script>
+      /*
+        Example kicking off the UI. Obviously, adapt this to your specific needs.
+        Assumes you have a <div id="q-app"></div> in your <body> above
+       */
+      new Vue({
+        el: "#q-app",
+        data: function() {
+          return {
+            tab: "geschichte",
+            activetabs: "geschichte"
+          };
+        },
+        watch: {
+          tab: function (val) {
+            window.location.href = val + ".html";
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

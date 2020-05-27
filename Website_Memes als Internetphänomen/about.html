@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <!--
+    WARNING! Make sure that you match all Quasar related
+    tags to the same version! (Below it's "@1.9.3")
+  -->
+
+  <head>
+    <title>&Atilde;�ber | Memes - Ein Ph&auml;nomen</title>
+    <link href="quasar/iconscss.css" rel="stylesheet" type="text/css" />
+    <link href="quasar/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="quasar/quasar.min.css" rel="stylesheet" type="text/css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+
+    <style>
+      .header--section {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(18, 18, 18, 0) 0%,
+            rgba(18, 18, 18, 0.98) 90%,
+            rgba(18, 18, 18, 1) 100%
+          ),
+          url("assets/babyyoda.jpg");
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Add the following at the end of your body tag -->
+    <div id="q-app">
+      <q-layout view="hHh lpR fFf">
+        <div class="header--section">
+          <h3 class="q-mt-none text-weight-bold">
+            &Uuml;ber Uns
+          </h3>
+              <p>
+              Dieses Website wurde zum Wintersemster19/20 im Rahmen des Moduls "Grundlagen Multimedia" (erstes Semster Medieninformatik)
+              an der HTWK Leipzig erstellt.<br>
+              <br>Verantwortliche der Projektgruppe:
+                      <ul>
+                        <li>N. Jost</li>
+                        <li>L. Kalb</li>
+                        <li>W. Siegert</li>
+                      </ul>
+             </p>
+
+             <h3>Quellen:</h3>
+             <ul>
+              <li>https://www.youtube.com/watch?v=bJTSxRBbCQA ---> Casually explained Meme erklärung Lifecycle of a Meme</li>
+              <li>https://www.youtube.com/watch?v=fVnXXncwU4Y ---> arte Meme erklärung</li>
+              <li>https://knowyourmeme.com/memes/all-your-base-are-belong-to-us --> nuetzlicher Link</li>
+              <li>https://www.goodreads.com/book/show/9206360-all-your-base-are-belong-to-us --nuetzlicher Link</li>
+              <li>https://makeameme.org/memegenerator -->Memegenerator</li>
+              <li>https://imgflip.com/ai-meme -->random Meme AI</li>
+              <li>https://en.wikipedia.org/wiki/Internet_meme --> Wikipedia englisch</li>
+              </ul>
+
+        </div>
+        <q-footer bordered class="bg-dark text-primary">
+          <q-tabs
+            no-caps
+            active-color="primary"
+            indicator-color="transparent"
+            class="text-grey"
+            v-model="tab"
+          >
+            <q-tab name="erklaerung" label="Erkl&auml;rung"></q-tab>
+            <q-tab name="geschichte" label="Geschichte"></q-tab>
+            <q-tab name="index" icon="home"></q-tab>
+            <q-tab name="trends" label="Trends"></q-tab>
+            <q-tab name="about" label="&Uuml;ber"></q-tab>
+          </q-tabs>
+        </q-footer>
+      </q-layout>
+    </div>
+
+    <script>
+      window.quasarConfig = {
+        dark: true
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/quasar@1.9.4/dist/quasar.ie.polyfills.umd.min.js"></script>
+    <script src="quasar/vue.min.js"></script>
+    <script src="quasar/quasar.umd.min.js"></script>
+
+    <script>
+      /*
+        Example kicking off the UI. Obviously, adapt this to your specific needs.
+        Assumes you have a <div id="q-app"></div> in your <body> above
+       */
+      new Vue({
+        el: "#q-app",
+        data: function() {
+          return {
+            tab: "about"
+          };
+        },
+        watch: {
+          tab: function (val) {
+            window.location.href = val + ".html";
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+  <!--
+    WARNING! Make sure that you match all Quasar related
+    tags to the same version! (Below it's "@1.9.3")
+  -->
+
+  <head>
+    <title>Erkl&auml;rung | Memes - Ein Ph&auml;nomen</title>
+    <link href="quasar/iconscss.css" rel="stylesheet" type="text/css">
+    <link href="quasar/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="quasar/quasar.min.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+      <style>
+        .header--section {
+          background-image: linear-gradient(to bottom, rgba(18,18,18,0) 0%,rgba(18,18,18, 0.98) 90%,rgba(18,18,18 ,1) 100%), url("assets/philiosaurus.jpg");
+        }
+        </style>
+</head>
+
+
+  <body>
+    <!-- Add the following at the end of your body tag -->
+    <div id="q-app">
+        <q-layout view="hHh lpR fFf">
+              <div class="header--section">
+                <h3 class="q-mt-none text-weight-bold">
+                  Was ist ein Meme?
+                </h3>
+                      <q-tabs v-model="activetabs" inline-label active-color="primary" align="left">
+                        <q-tab name="begriff" icon="label" label="Begriff"></q-tab>
+                        <q-tab name="formate" icon="format_shapes" label="Formate"></q-tab>
+                        <q-tab name="wirkung" icon="movie" label="Wirkung"></q-tab>
+                      </q-tabs>
+              </div>
+            <div class="row" style="margin-bottom: 150px; margin-top: 20px; margin-left: 25px">
+              <div class="col-sm-12 col-lg-7">
+
+        <q-tab-panels
+          v-model="activetabs"
+          animated
+          swipeable
+          vertical
+          transition-prev="jump-up"
+          active-class="text-primary"
+          class="bg-transparent"
+          transition-next="jump-up"
+          swipeable
+        >
+  <q-tab-panel name="begriff">
+    <h5 class="q-mb-sm q-mt-none">Was ist ein Meme?</h5>
+    <p>
+      Memes (ausgesprochen "Mihms"), wie wir Sie hier thematisieren, sind ein Internet-Ph&auml;nomen, bei dem sich einen Inhalt blitzschnell und
+      massenhaft &uuml;ber das Internet verbreitet. Dazu tr&auml;gt meist Humor als Basiskomponente dieses Inhalts bei.
+      Ein lebendiger und mutierender Running Gag auf globalem Level.
+      Ein Meme will andere zum lachen bringen
+      Je mehr ein Meme leute zum lachen bringt,
+      umso mehr wird es geteilt und umso mehr
+      breitete sich aus.
+    </p>
+    <p>
+      Memes und Internet sind f&uuml;r einander geschaffen. Nicht, weil sie digitale visuelle Kommunikation sind (obwohl sie das
+      nat&uuml;rlich sind),
+      sondern weil sie das Produkt eines Schwarms sind. Sie sind die Kurzform einer hyper-verbundenen Gruppe.
+      Dieser "Web Hive Mind" ist ein seltsamer (oft lustiger, manchmal gef&auml;hrlicher) Ort.
+    </p>
+
+    <h5 class="q-mb-sm">Woher kommt der Begriff "Meme"?</h5>
+    <p>
+      Der Begriff "Mem" stammt vom Evolutionsbiologen Richard Dawkins. Dawkins pr&auml;gte den Begriff 1976 in seinem Buch "The
+      Selfish Gene, lange vor dem modernen Internet,
+      bevor Meme zu dem wurden, was sie heute sind, "Memes". F&uuml;r Dawkins waren kulturelle Ideen nicht anders als
+      Gene. Konzepte,
+      die sich so schnell wie m&ouml;glich von Gehirn zu Gehirn ausbreiten mussten und sich dabei replizieren und mutieren
+      mussten.
+      Er nannte diese Artefakte Meme, Bits der kulturellen DNA, die die gemeinsamen Erfahrungen der Gesellschaft kodierten
+      und
+      sich gleichzeitig st&auml;ndig weiterentwickelten.
+    </p>
+    <figure class="einzel">
+           <img src=".\assets\dawkins.png" alt="Richard Dawkins" />
+           <figcaption>Richard Dawkins</figcaption>
+    </figure>
+    <p>
+      Damals sprach Dawkins von der Weitergabe von Kultur, Gesangsmelodien, Kunststilen.
+      Heute betrachten die Internet-B&uuml;rger Memes als Witze, die &uuml;ber die sozialen Medien in Form von Image-Macros,
+      Hashtags,
+      GIFs
+      oder Videos weitergegeben werden.
+    </p>
+
+    <h5 class="q-mb-sm">Nochmal</h5>
+
+    <p>
+      Ein Meme will andere zum lachen bringen
+      Je mehr ein Meme Leute zum lachen bringt,
+      umso mehr wird es geteilt und umso mehr
+      breitet es sich aus. Einige Memes sind zu
+      wahren  <a href="trends.html">Klassikern</a> geworden.
+    </p>
+    <p>Entdecke auf dieser Seite mehr &uuml;ber die <a href="geschichte.html">Geschichte</a> und Eigenschaften des Phaenomens,
+      Internet-Memes,
+      und nat&uuml;rlich tonnenweise Beispiele.
+    </p>
+  </q-tab-panel>
+
+  <q-tab-panel name="formate">
+    <h5 class="q-mb-sm q-mt-none">M&ouml;glichkeiten der Kategorisierung</h5>
+
+    <p>
+    Will man das Ph&auml;nomen Memes verstehen, ist eine Systematisierung n&ouml;tig, da dies aufgrund riesiger Mengen von Memes
+    sowie unklar gezogenen Grenzen (was als Meme zu bezeichnen ist und was nicht) schwer ist, hier ein Versuch der
+    Einordnung.
+    </p>
+
+
+    <p>
+    Eine Ordnung nach Art der Umsetzung
+
+    Memes gibt es in verschiedenen Formen, grob lassen sie sich aber aufteilen in:
+
+    <ul>
+      <li>Klassische Bild-Memes (image macro)</li>
+      <li>Greentext memes</li>
+      <li>GIFs (kurz f&uuml;r:"grapics interchange format", Kurzanimation bzw Bewegtbild ohne Ton)</li>
+      <li>Videos</li>
+    </ul>
+    </p>
+
+
+    <h5 class="q-mb-sm">Image Macro</h5>
+
+    <p>    Wer an Memes in Bildformat denkt, der denkt an diese Form der Memes, sie sind die am meisten verbreitete Form des Memes
+    und zumeist leicht zu verstehen.
+    Hierbei wird mithilfe einer &Uuml;berschrift ("caption") eine Situation oder ein Sachverhalt erkl&auml;rt oder Dargestellt,
+    bisweilen sind das Alltagssituationen, denn ein Meme lebt von seiner allgemeinen Verst&auml;ndlichkeit bzw
+    Nachvollziehbarkeit,
+    oder aber auch Phantasiesituationen.</p>
+
+    <p>    Die &Uuml;berschrift bezieht sich dann auf ein sog. "Template", ein Bild das meist aus einem bestimmten, aber oft bekannten
+    Kontext stammt.
+    Das k&ouml;nnen markante Aussagen bekannter Personen des &ouml;ffentlichen Interesses sein, oder aber auch Zitate aus Film und
+    Fernsehen,
+    die dadurch einen Wiedererkennungswert besitzen.
+    Die Kombination von Caption und Template erzeugt dann entweder &uuml;ber eine unerwartete Wendung, eine erwartete Pointe oder
+    aber
+    auch die Kombination von absurder Caption mit erwartetem bzw bekanntem Template die Komik.</p>
+
+
+    <p>    Image Macros funktionieren aber auch ohne direkte Komik im Template, so zum Beispiel im sogenannten "Badluck Brian"
+    Meme,
+    dort wird im Top Text, dem Text am oberen Rand des Bild-Memes, ein recht normaler Sachverhalt beschrieben,
+    der im Bottom Text, unterer Bild Rand, mit einer stark &uuml;berspitzten Wendung ad absurdum gef&uuml;hrt wird.</p>
+    <br clear="all"/>
+    <figure>
+             <img style="height: 250px" src=".\assets\Typical_internet_meme_image_format.svg.png" alt="Typus Image Macro Erkl&auml;rung" />
+             <figcaption>Typus Image Macro</figcaption>
+    </figure> <br clear="all"/>
+
+
+    <h5 class="q-mb-sm">Greentext Memes</h5>
+
+    <p>    Beliebt sind Greentext Memes schon seit knapp einem Jahrzehnt, aufgrund ihres einfachen Aufbaus.
+    Dabei wird in stichpunktartiger Form eine Geschichte, mal eine komplett erfundene und mal eine selbst erlebte, erz&auml;hlt.
+    Die gr&uuml;ne Schriftfarbe die dabei "traditionell" benutzt wird gibt dieser Art Meme seinen Namen.
+    Die Komik dieser Memes ergibt sich aus seiner einfachen Lesbarkeit und Verst&auml;ndlichkeit, bei der selbst l&auml;ngere
+    Geschichten
+    einfach gefolgt werden kann, bei der sich an einem Punkt eine unerwartete oder absurde Wendung ereignet,
+    f&uuml;r die die Vorgeschichte einen dramatischen Spannungsaufbau leistet.</p>
+    <br clear="all"/>
+    <figure>
+             <img src=".\assets\Brojob+brojob_3bf8b9_4960422.png" alt="Typus Gren Text Meme" />
+             <figcaption>"Green Text" Meme</figcaption>
+    </figure> <br clear="all"/>
+
+
+    <h5 class="q-mb-sm">GIFs</h5>
+
+    <p>    Diese Kurzanimationen k&ouml;nnen genau wie Image Macros mit Caption funktionieren, aber auch ohne, da durch bewegte Bilder
+    einfache Botschaften ausgrdr&uuml;ckt werden k&ouml;nnen.</p>
+    <br clear="all"/>
+    <figure>
+             <img src=".\assets\giphy.gif" alt="Typus GIF Meme" />
+             <figcaption>"GIF"-Meme</figcaption>
+    </figure> <br clear="all"/>
+
+
+    <h5 class="q-mb-sm">Videos</h5>
+
+    <p>    Ein eigenes Genre stellen Videos dar, da hier sowohl &uuml;ber Bild und Ton Sachverhalte ausgedr&uuml;ckt werden k&ouml;nnen.
+    Die Art und Weise wie diese Memes entstehen ist dabei unterschiedlich, es k&ouml;nnen Momente aus der Realit&auml;t nachtr&auml;glich
+    bearbeitet
+    werden um sie zum Beispiel in eine Videospielwelt zu versetzen um &uuml;ber Eigenarten jener Welt und die &auml;hnlichkeiten der
+    Realit&auml;t damit
+    den Witz zu erzeugen, die M&ouml;glichkeiten sind dabei &auml;u&szlig;erst weit gefasst, sodass man nur schwer alle M&ouml;glichkeiten
+    aufz&auml;hlen k&ouml;nnte.</p>
+
+    <p>    Markante Formen des Video-Memes werden "Vines" genannt und im weiteren Sinne kann man auch die Gattung des
+    anarcho-humoristischen YTP ("YouTube-Poop"), bei dem die Komik &uuml;ber zurechtschneiden des Audios und einer damit
+    verbundenen
+    kompletten Verzerrung des Inhalts bis hin ins g&auml;nzlich Sinnlose erreicht wird, dazu z&auml;hlen.</p>
+    <br clear="all"/>
+    <p>Beispiel Video-Meme: </p>
+    <a href="https://www.youtube.com/watch?v=C37K7zWCh3A" target="_blank">"How it feels to chew 5 Gum"</a>
+    </p>
+    <br>
+
+
+  </q-tab-panel>
+
+  <q-tab-panel name="wirkung">
+    <h5 class="q-mt-none q-mb-sm">Das Meme als Element des sozialen Diskurses</h5>
+
+    <p>    Memes sind eine soziokulturelle Ausdrucksform, &uuml;ber Bild und wahweise Ton k&ouml;nnen nicht nur Botschaften,
+    sondern auch Gef&uuml;hle transportiert werden, etwa durch Verwendung eines besonderen Filmausschnitts,
+    eines besonderen Zitats oder eines Bildes, mit dem der Betrachter entweder seine eigenen Gef&uuml;hle
+    oder Gedanken verbindet, oder durch das durch die Dramatik der entsprechenden Szene, also des Kontexts,
+    bestimmte Gef&uuml;hlslagen vermittelt bekommt.
+    Durch entsprechende eventuell absurde Gegens&auml;tze von Dramatik der Szene (also des Templates) und
+    Aussage des Memes wird hierbei die Pointe hergestellt.
+    Als humoristische Ausdrucksform sind Memes also pr&auml;destiniert, auch abseits des puren Humors gebraucht zu werden.</p>
+
+
+    <p>    Eine beliebte Nutzung von Memes sind, wenig verwunderlich, politische Memes, gerade in den politisch
+    gespaltenen USA ist dies alles andere als die Ausnahme.
+    So wird in gr&ouml;&szlig;ere Meme-Gruppen auf Facebook gern sogenanntes "Bait-Posting" betrieben,
+    bei der Memes mit besonders streitbaren Ansichten oder Aussagen (z.b. ein l&auml;cherlich machen von Politikern
+    einer der beiden gro&szlig;en Parteien, grenzwertig rassistische Witze oder thematisieren von Abtreibung bzw dessen Verbot)
+    hochgeladen werden, allein mit der Absicht heftige Debatten und f&uuml;r Kommentarspalten typische, weniger konstruktive
+    Kritik
+    auszul&ouml;sen.</p>
+
+    <p> Die Masse f&auml;llt also auf den "Bait" ( den K&ouml;der) herein, zum Vergn&uuml;gen des Urhebers des Memes.
+    Aber auch au&szlig;erhalb entsprechender Gruppen oder Dashboards wie "tumblr", "4chan", "Facebook" oder "Reddit"
+    tragen Memes zu gezielten Diskreditierung von Personen des &ouml;ffentlichen Interesses bei, im Fokus stehen dabei
+    sehr linke oder sehr konservative Politiker und Schauspieler, die sich zu &ouml;ffentlichen Debatten &auml;u&szlig;ern.
+    Das L&auml;cherlichmachen entsprechender Personen ist dabei mit kurzen, pr&auml;gnanten Memes h&ouml;chstwahrscheinlich effektiver
+    als das schreiben von Artikeln oder Essays durch Zeitungen oder News-Webseiten, Memes beschleunigen so den politischen
+    Diskurs,
+    allerdings nehmen sie durch ihre K&uuml;rze auch jeglichen konstruktiven Austausch aus dem Diskurs, so tragen sie
+    unmissverst&auml;ndlich
+    zur Polarisierung der Gesellschaft bei und bewirken eine Verwandlung der Debattenkultur in einen argumentativen
+    Grabenkrieg
+    bei dem sich mit Meinung und Denunziation beschossen wird, allerdings echte Argumente in den Hintergrund treten.
+    Memes sind dahingehend also mit Vorsicht zu genie&szlig;en und sollten eventuell ihren apolitischen Charakter behalten.
+    </p><br clear="all"/>
+    <figure>
+             <img src=".\assets\LeftCantMeme.jpg" alt="politische Memes von Links und Rechts in Amerika" />
+             <figcaption>Memes &uuml;ber Memes - Beispiel f&uuml;r diffamierende politische Memes in den USA</figcaption>
+    </figure> <br clear="all"/>
+
+  </q-tab-panel>
+        </q-tab-panels>
+
+
+              </div>
+            </div>
+
+        <q-footer bordered class="bg-dark text-primary">
+            <q-tabs no-caps active-color="primary" indicator-color="transparent" class="text-grey" v-model="tab">
+              <q-tab name="erklaerung" label="Erkl&auml;rung"></q-tab>
+              <q-tab name="geschichte" label="Geschichte"></q-tab>
+              <q-tab name="index" icon="home"></q-tab>
+              <q-tab name="trends" label="Trends"></q-tab>
+              <q-tab name="about" label="&Uuml;ber"></q-tab>
+            </q-tabs>
+          </q-footer>
+    </q-layout>
+    </div>
+
+    <script>
+    window.quasarConfig = {
+      dark: true
+    }
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/quasar@1.9.4/dist/quasar.ie.polyfills.umd.min.js"></script>
+<script src="quasar/vue.min.js"></script>
+<script src="quasar/quasar.umd.min.js"></script>
+
+    <script>
+      /*
+        Example kicking off the UI. Obviously, adapt this to your specific needs.
+        Assumes you have a <div id="q-app"></div> in your <body> above
+       */
+      new Vue({
+        el: '#q-app',
+        data: function () {
+          return {
+              tab: 'erklaerung',
+              activetabs: 'begriff',
+              splitterModel: 20
+          }
+        },
+        watch: {
+            tab (val) {
+                window.location.href=val + '.html';
+            }
+        }
+      })
+    </script>
+  </body>
+</html>
